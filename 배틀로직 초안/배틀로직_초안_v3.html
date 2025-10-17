@@ -507,7 +507,7 @@ function buildNerfConstraints(b1, b2){
   const lines = [];
   lines.push('정책: 강한 쪽(버킷 75/100)은 핵심 유지. 약한 쪽(버킷 0/25)은 확정 파훼/약화로 재서술.');
   lines.push('가능성/추측 표현 금지. 확정 표현만 사용(된다/파훼된다/약화된다/무력화된다/봉인된다).');
-  lines.push('단, 캐릭터를 무조건 패배시키도록 파훼된다고 서술하면 안되므로, 부분적으로 약화 서술을 녹여내고 원문을 되도록이면 그대로 사용할 것.');
+  lines.push('단, 격차가 크게 나지 않는 이상 직접적인 약화 서술은 피하고 부분적인 약화 묘사만 적용하며, 차이가 많이 날수록 강제적, 절대적, 무력화 등의 표현을 원문에서 제거하여 출력하라.');
 
   const addPair = (whoStrong, whoWeak, strongBuckets, weakBuckets) => {
     for(const [c, sInfo] of Object.entries(strongBuckets)){
